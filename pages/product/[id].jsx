@@ -1,3 +1,4 @@
+import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../../styles/Product.module.css";
