@@ -4,7 +4,7 @@ import dbConnect from "../../../util/mongo";
 export default async function handler(req, res) {
   const { method } = req;
 
-//   const token = cookies.token
+  // const token = cookies.token
 
   dbConnect();
 

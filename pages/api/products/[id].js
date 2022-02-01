@@ -8,7 +8,7 @@ export default async function handler(req, res) {
     query: { id },
     cookies
   } = req;
-//   const token = cookies.token
+  // const token = cookies.token
 
   dbConnect();
 
