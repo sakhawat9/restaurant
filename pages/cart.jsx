@@ -1,13 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import {
-  PayPalButtons, PayPalScriptProvider, usePayPalScriptReducer
+  PayPalButtons,
+  PayPalScriptProvider,
+  usePayPalScriptReducer
 } from "@paypal/react-paypal-js";
 import axios from "axios";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import OrderDetail from "../components/OrderDetail";
+import OrderDetail from "../components/OrderDetail";
 import { reset } from "../redux/cartSlice";
 import styles from "../styles/Cart.module.css";
 
@@ -166,7 +168,7 @@ const Cart = () => {
               <PayPalScriptProvider
                 options={{
                   "client-id":
-                    "ATTL8fDJKfGzXNH4VVuDy1qW4_Jm8S0sqmnUTeYtWpqxUJLnXIn90V8YIGDg-SNPaB70Hg4mko_fde4-",
+                    "ASQwaCawZhhc1PCIskAFvmczNt2fosfHTgS8hOTwpqMq6TxZ3J0XYoUdEzY-AkQO300HuKGuOzCDPmF4",
                   components: "buttons",
                   currency: "USD",
                   "disable-funding": "credit,card,p24",
@@ -182,7 +184,7 @@ const Cart = () => {
           )}
         </div>
       </div>
-      {/* {cash && <OrderDetail total={cart.total} createOrder={createOrder} />} */}
+      {cash && <OrderDetail total={cart.total} createOrder={createOrder} />}
     </div>
   );
 };
