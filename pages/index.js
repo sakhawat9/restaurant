@@ -8,6 +8,7 @@ import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ pizzaList, admin }) {
+  console.log(pizzaList);
   const [close, setClose] = useState(true);
   return (
     <div className={styles.container}>
